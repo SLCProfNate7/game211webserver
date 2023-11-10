@@ -70,7 +70,9 @@ db1.once('open', ()=>{
 // setup a route on the 'root' of the url
 // IE: http://localhost:8080/
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to the leaderboard API.</h1><p>There is no front end webpages only API calls.</p>");
+  res.send("<h1>Welcome to the leaderboard API.</h1><p>There is no front end webpages only API calls.</p><br>\
+  Gets a list of games: <a href='https://lime-faithful-hippo.cyclic.app/api/games'>https://lime-faithful-hippo.cyclic.app/api/games<a><br>\
+  Gets a games leaderboard info: <a href='https://lime-faithful-hippo.cyclic.app/leaderBoard/2'>https://lime-faithful-hippo.cyclic.app/api/leaderBoard/2<a>");
 });
 
 //Game validation functions body passed in. 
